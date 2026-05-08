@@ -29,6 +29,26 @@
             border-radius: 1rem;
         }
         .accent-text { color: #64FFDA; }
+        .btn-primary {
+            background: linear-gradient(135deg, #64FFDA 0%, #00D9FF 100%);
+            color: #020617;
+            padding: 0.75rem 1.5rem;
+            border-radius: 0.5rem;
+            font-weight: 600;
+            transition: transform 0.2s, box-shadow 0.2s;
+            text-decoration: none;
+            display: inline-block;
+        }
+        .btn-primary:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 25px rgba(100, 255, 218, 0.3);
+        }
+        .contact-card {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            padding: 1rem;
+        }
     </style>
 </head>
 <body class="p-8">
@@ -122,11 +142,82 @@
         </div>
     </section>
 
+    <section class="max-w-6xl mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">How It Works</h2>
+        <div class="glass p-8">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 accent-text">For Customers</h3>
+                    <ul class="space-y-3 text-slate-300">
+                        <li>✅ Browse our premium product collection</li>
+                        <li>✅ Shop via TikTok Shop or Shopify</li>
+                        <li>✅ Fast shipping & quality guarantee</li>
+                        <li>✅ 24/7 customer support</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold mb-4 accent-text">For Partners & Investors</h3>
+                    <ul class="space-y-3 text-slate-300">
+                        <li>✅ View our business strategy & metrics</li>
+                        <li>✅ Explore partnership opportunities</li>
+                        <li>✅ Access product roadmap</li>
+                        <li>✅ Join our growth journey</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="max-w-6xl mx-auto py-12">
+        <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+        <div class="glass p-8">
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-lg font-semibold accent-text mb-2">What is VibeLogic?</h3>
+                    <p class="text-slate-400">VibeLogic is a 2026 startup focused on scaling high-margin micro-wellness gadgets, eco-friendly home tech, and innovative pet technology through modern e-commerce platforms.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold accent-text mb-2">How can I purchase products?</h3>
+                    <p class="text-slate-400">You can shop our products through TikTok Shop and Shopify. We offer fast shipping and quality assurance on all items.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold accent-text mb-2">Are you accepting partnerships?</h3>
+                    <p class="text-slate-400">Yes! We're open to partnerships, collaborations, and investment opportunities. Contact us to discuss how we can work together.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-semibold accent-text mb-2">What's your shipping timeline?</h3>
+                    <p class="text-slate-400">Standard shipping takes 5-7 business days. Express options are available at checkout.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <footer class="text-center py-20 border-t border-slate-800 mt-20 max-w-6xl mx-auto">
-        <h3 class="text-2xl font-bold mb-4">Get In Touch</h3>
-        <p class="accent-text font-mono mb-2">hello@vibelogic.tech</p>
-        <p class="text-slate-500">Based in Weston, Florida</p>
-        <p class="text-slate-600 text-sm mt-8">© 2026 VibeLogic. All rights reserved.</p>
+        <h3 class="text-2xl font-bold mb-8">Get In Touch</h3>
+        
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-12">
+            <div class="glass p-6">
+                <p class="text-slate-400 text-sm mb-3">📞 Phone</p>
+                <a href="tel:+13104246147" class="accent-text font-mono font-bold text-lg hover:underline">
+                    +1 (310) 424-6147
+                </a>
+            </div>
+            <div class="glass p-6">
+                <p class="text-slate-400 text-sm mb-3">💬 WhatsApp</p>
+                <a href="https://wa.me/13104246147" target="_blank" class="accent-text font-mono font-bold text-lg hover:underline">
+                    Chat on WhatsApp
+                </a>
+            </div>
+            <div class="glass p-6">
+                <p class="text-slate-400 text-sm mb-3">✉️ Email</p>
+                <a href="mailto:hello@vibelogic.tech" class="accent-text font-mono font-bold text-lg hover:underline">
+                    hello@vibelogic.tech
+                </a>
+            </div>
+        </div>
+
+        <p class="text-slate-500 mb-2">Based in Weston, Florida</p>
+        <p class="text-slate-600 text-sm">© 2026 VibeLogic. All rights reserved.</p>
     </footer>
 
 </body>
